@@ -173,7 +173,7 @@ function SessionHandler(db) {
                 " including numbers, lowercase and uppercase letters.";
             return false;
         }
-        if (password !== verify) {
+        if (password === verify) {
             errors.verifyError = "Password must match";
             return false;
         }
